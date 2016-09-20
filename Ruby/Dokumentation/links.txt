@@ -1,0 +1,6 @@
+Dokumentation für Klassen:
+	https://ruby-doc.org/core-1.9.2/String.html
+	http://www.ruby-lang.org/de/documentation/
+
+Tutorials
+	http://www.tutorialspoint.com/ruby/

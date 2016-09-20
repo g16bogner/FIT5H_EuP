@@ -1,0 +1,14 @@
+Erzeugen Sie folgende Ausgabe:
+
+
+Larry has a health of 60.
+CURLY has a health of 125.
+*************Moe has a health of 100.*************
+*************Moe has a health of 100.*************
+Shemp......................... 90 health
+Shemp......................... 90 health
+Players:
+        Larry
+        Curly
+        Moe
+The game started on Thursday 08/02/2012 at 11:42AM

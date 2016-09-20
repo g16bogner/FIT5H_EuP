@@ -1,8 +1,13 @@
+name1 = "Larry"
+name2 = "Curly"
+name3 = "Moe"
 
-movie = "Goonies"
+puts "Players: \n\t#{name1}\n\t#{name2}\n\t#{name3}"
 
-puts "Mickey\'s favorite movie is \n" + movie
-
-rank = 10
-
-puts "#{movie} has a rank of #{rank * 2} am #{Time.now}"
+allenamen = <<HEREDOC
+Players:
+	#{name1}
+		#{name2}
+	#{name3}
+HEREDOC
+puts allenamen
