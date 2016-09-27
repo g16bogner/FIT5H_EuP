@@ -1,0 +1,33 @@
+OOP
+
+Klassen
+	Klassen bilden den Plan von konkreten Objekten.
+	Def:
+		class Player
+
+		end
+		Eine Klasse wird durch die Verwendung des Schlüsselwortes class definiert.
+		Die Definition ist immer in einen Block eingeschlossen.
+
+Objekt:
+	Wenn ich mit einer Klasse arbeiten will, dann erzeuge ich ein Objekt, das in einer Variable gespeichert wird.
+		obj = Player.new
+	Ein neues Objekt wird in einer Variablen mit beliebiger Bezeichnung gespeichert.
+	Es wird mit dem Namen der Klasse und dem Aufruf der Methode new erzeugt.
+	Das Objekt hat alle Eigenschaften (Attribute) und Fähigkeiten (Methoden), die in der Klasse definiert sind.
+
+Konstruktor:
+	Beim Erzeugen eines neuen Objektes mit Player.new wird automatisch eine Methode 'initialize' aufgerufen. Diese Methode gibt es in jeder Ruby-Klasse. Es ist üblich diese existierende Methode mit einer eigenen Methode zu überschreiben, um dort die Basiswerte des Objektes festzulegen.
+	Bsp:
+		def initialize(name, health)
+			@name = name
+			@health = health
+		end
+
+
+Instanzvariable / Eigenschaften
+	In der OOP hat ein Objekt bestimmte Eigenschaften, die es charakterisieren. 
+	In Ruby werden diese Eigenschaften als Instanzvariablen definiert und ein '@' wird dem Namen vorangestellt.
+	Beispiel: @name
+	Das Besondere einer Instanzvariable oder Eigenschaft ist, dass sie in der ganzen Klasse gilt und verwertet werden kann.
+	Wichtig: Variablen die innerhal evon einem Block definiert werden und  kein @ vorangestellt haben, sind sogenannte lokale Variablen und gelten nur innerhalb des Blockes in dem siew definiert sind.

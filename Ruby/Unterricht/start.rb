@@ -1,21 +1,29 @@
-class Movie
-	def initialize(pname, prank=5)
-		@name = pname
-		@rank = prank
+class Player
+
+	def initialize(name, health=100)
+		@name = name
+		@health = health
 	end
 
-	def list_movie
-		"Movie heisst: #{@name} und hat einen Rank von: #{@rank}"
+	def to_s
+		"#{@name} hat Gesundheitsweirt: #{@health}"
 	end
 
-	def thumbs_up(value)
-		@rank = @rank + value
+	def w00t
+		@health += 10
+		#@health = @health + 10
+	end
+	def blame
+		@health -= 10
 	end
 end
 
-obj = Movie.new("Superman")
-puts obj.list_movie
-obj.thumbs_up(7)
-puts obj.list_movie
-obj2 = Movie.new("Batman", 10)
-puts obj2.list_movie
+player1 = Player.new("Janz", 5000)
+puts player1
+player1.w00t
+puts player1
+
+player2 = Player.new("Schmidt")
+puts player2
+player2.blame
+puts player2
