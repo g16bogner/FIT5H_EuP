@@ -1,13 +1,10 @@
-name1 = "Larry"
-name2 = "Curly"
-name3 = "Moe"
+def movie_listing(movie, rank=5) 
+	"Movie: #{movie} ist ein guter Film, mit der Punktzahl: #{rank} am #{set_time}"
+end
 
-puts "Players: \n\t#{name1}\n\t#{name2}\n\t#{name3}"
+def set_time
+	Time.now.strftime("%d.%m.%Y")
+end
 
-allenamen = <<HEREDOC
-Players:
-	#{name1}
-		#{name2}
-	#{name3}
-HEREDOC
-puts allenamen
+puts movie_listing("Superman")
+
