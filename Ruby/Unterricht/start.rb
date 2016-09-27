@@ -1,29 +1,30 @@
-class Player
+class Movie
+  
+  attr_reader :title
 
-	def initialize(name, health=100)
-		@name = name
-		@health = health
-	end
+  def initialize(title, rank=0)
+    @title = title.capitalize
+    @rank = rank
+  end
 
-	def to_s
-		"#{@name} hat Gesundheitsweirt: #{@health}"
-	end
-
-	def w00t
-		@health += 10
-		#@health = @health + 10
-	end
-	def blame
-		@health -= 10
-	end
+  def title=(title)
+  	@title = title
+  end
+  
+  def thumbs_up
+    @rank += 1
+  end
+  
+  def thumbs_down
+    @rank -= 1
+  end
+  
+  def to_s
+    "#{@title} has a rank of #{@rank}."
+  end
 end
 
-player1 = Player.new("Janz", 5000)
-puts player1
-player1.w00t
-puts player1
-
-player2 = Player.new("Schmidt")
-puts player2
-player2.blame
-puts player2
+movie = Movie.new("Goonies", 10)
+puts movie.title
+movie.title = "GYnniies"
+puts movie.title
