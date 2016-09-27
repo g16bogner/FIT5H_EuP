@@ -60,3 +60,11 @@ Instanzvariable / Eigenschaften
 
   	Kurzform für Setter und Getter:
   		attr_accessor :name
+
+  	Virtuelles Attribut:
+  		Eine virtuelles Attribut ist eine Methode, die so aussieht, bzw. genutzt werden kann, wie eine Eigenschaft, die allerdings keine eigene Instanzvariable hat; also keine echte Eigenschaft ist, obwohl sie von außen so aussieht.
+  		def normalized_health
+  			@health * 1000
+  		end
+  		Aufruf:
+  			puts obj.normalized_health
