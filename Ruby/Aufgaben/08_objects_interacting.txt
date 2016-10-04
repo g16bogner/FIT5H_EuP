@@ -1,5 +1,5 @@
-a. erstellen Sie eine Klasse Game mit einem Konstruktor, der eine Instanzvariable title anlegt und fuellt und ein leeres Array mit dem Name Player enthaelt.
-b. die Klasse Game hat eine Methode add_player der ein SPieler hinzugefuegt wird
+a. erstellen Sie eine Klasse Game mit einem Konstruktor, der eine Instanzvariable title anlegt. Zugleich soll ein leeres Array mit dem Namen players erstellt werden.
+b. die Klasse Game bekommt eine Methode add_player der ein SPieler hinzugefuegt wird
 c. eine Methode play erzeugt folgenden Ausdruck:
 	There are 3 players in Knuckleheads: 
 	I'm Moe with a health of 100 and a score of 103.
