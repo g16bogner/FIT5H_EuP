@@ -24,7 +24,12 @@ class Movie
   end
 end
 
-movie = Movie.new("Goonies", 10)
-puts movie.title
-movie.title = "GYnniies"
-puts movie.title
+movie1 = Movie.new("Goonies", 10)
+movie2 = Movie.new("Batman", 5)
+movie3 = Movie.new("Spiderman", 8)
+movies = [movie1, movie2, movie3]
+
+movies.each do |movie|
+  movie.thumbs_down
+  puts movie
+end
