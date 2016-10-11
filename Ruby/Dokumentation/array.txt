@@ -24,5 +24,24 @@ Methoden von Arrays
 	Löschen von Element
 		seats.delete_at(3)
 
-		
 
+Iterations-Methoden:
+var = %w(ich u du)
+
+var.each
+	Methode zum durchlaufen der einzelnen Elemente
+
+var.select
+	Methode, die im Block einen boolschen Wert erwartet und bei true den Inhalt zurückgibt
+	ret = var.select {|v| v.size > 1 } 
+	ret enthält ['ich', 'du']
+
+var.reject
+	Gegenteil von select: die zurückgewiesenen Werte werden gespeichert
+	ret = var.reject {|v| v.size > 1 }
+	ret enthält ['u']
+
+var.sort
+	gibt ein sortiertes Array zurück
+
+	
