@@ -1,0 +1,41 @@
+Vererbung:
+	Die OOP basiert auf dem Prinzip der Überschaubarkeit. Deshalb wurde die Vererbung als grundlegendes Merkmal eingeführt.
+	Erbt eine Klasse von einer anderen Klasse (z.B.: class Lkw < Car), dann stehen in der erbenden Klasse alle Methoden und Eigenschaften zur Verfügung, die in der Elternklasse definiert wurden.
+
+Beispiel:
+	class Car
+		attr_accessor :ps
+	end
+
+	class Lkw < Car
+
+	end
+
+	obj = Lkw.new
+	obj.ps = 50
+	puts obj.ps
+
+Zugriffsmodifizierer
+	Es kommt vor, dass bestimmte Methoden in der Elternklasse nur innerhalb díeser Klasse benutzt werden sollen. Dann werden diese als 'private' gekennzeichnet.
+	Falls eine Methode in der Elternklasse nicht öffentlich sein soll, aber vererbt werden soll, dann wird diese als 'protected' gekennzeichnet.
+	Falls kein Zugriffsmodifizierer angegeben ist, gelten die definierten Methoden als 'public'. 
+
+	class Car
+		#von aussen erreichbar: public
+		attr_accessor :ps
+		def beschleunigen
+			...
+		end
+
+		#von Kindklassen erreichbar: protected
+		protected
+			def umwandeln_in_kmh(var)
+				...
+			end
+
+		#nur innerhalb der Elternklasse aufrufbar: private
+		private
+			def irgendwas
+				...
+			end
+	end

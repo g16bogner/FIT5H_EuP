@@ -1,0 +1,27 @@
+if - Anweisungen
+Die Überprüfung einer oder mehrerer Bedingungen findet in if-Blöcken statt.
+Müssen mehrere Bedingungen überprüft werden, dann findet eine Verknüpfung mit dem Und-operator statt:
+	if typ.is_a?(String) && typ.size > 2
+	Es müssen beide Bedingungen true sein, damit die Anweisungen in dem Block ausgeführt werden
+Muss von mehreren Bedingungen eine zutreffen ist die Verwendungen des Oder-Operators sinnvoll:
+	if bedingung1 || bedingung2
+	Wenn einer der Bedingungen zutrifft werden die Anweisungen im Block ausgeführt
+
+if - elsif - else -end KONSTRUKT:
+	def typ=(typ)
+		if !typ.is_a?(String) 
+			puts "war kein String"
+		elsif typ.size < 3
+			puts "String zu kurz"
+		else
+			@typ = typ.capitalize
+		end
+	end
+
+
+Kurzform der if-ANweisung:
+	def ps=(ps)
+		@ps = ps if ps > 0
+	end
+
+	Steht am Ende einer Anweisung (in der gleichen Zeile) eine if-Bedinung, dann wird die vorgehende Anweisung (z.B.: Zuordnung eines Wertes) nur ausgeführt, wenn die Bedingung true ist.
