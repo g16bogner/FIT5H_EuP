@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
 	def index
-		@events = %w(Weihnachtsmannkillen Christkindabschaffen Pfeiferauchen)
+		@events = Event.all
 	end
 end
