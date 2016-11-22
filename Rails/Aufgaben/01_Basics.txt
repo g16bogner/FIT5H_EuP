@@ -1,0 +1,19 @@
+Erstellen Sie eine Applikation flix im Projekt-Verzeichnis
+
+Starten Sie die App
+
+Erstellen Sie einen Controller mit der Bezeichnung movies
+
+Erstellen Sie ein Route zur index-Action des movies-Controllers
+
+Erstellen Sie eine INDEX-Action
+
+Erstellen Sie ein index-Template zur AUsgabe von:
+<h1>Movies</h1>
+<ul>
+  <li>Iron Man</li>
+  <li>Superman</li>
+  <li>Spider-Man</li>
+</ul>
+
+Dynamisieren Sie die AUsgabe mit einem Array @movies im Controller
