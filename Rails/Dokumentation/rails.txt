@@ -1,0 +1,17 @@
+Der Befehl rails wird immer im Basisordner der Applikation ausgeführt.
+Das Programm rails ermöglicht auf der Console ausgeführt eine Reihe von Aktionen:
+
+rails new projcect_name
+	Erstellt ein neues Projekt
+
+rails s
+	startet einen Server, der auf Port 3000 lauscht
+
+rails g controller events
+	erstellt in der App einen Controller mit dem Namen movies_controller.rb
+
+rails d controller events
+	löscht die Dateien die durch den Generator erstellt wurden
+
+rails g model event name:string location:string price:decimal
+	es werden Dateien zur Erstellung einer Tabelle erzeugt, mit dem Namen events und den Spalten: name, location, price

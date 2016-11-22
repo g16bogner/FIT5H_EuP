@@ -1,0 +1,17 @@
+MVC
+	Model - View -Controller auf verschiedenen, voneinader getrennten Ebenen
+
+Convention Over Configuration
+	Es gibt Regeln die eine Automatisierung durch den rails generator ermöglichen
+	z.B:
+		controller sind immer im Plural und die Klasse wird im CamelCasing benannt: 
+			movies_controller.rb
+				class MoviesController
+		models sind im Singular benannt:
+			app/models/event.rb
+				class Event
+		Die Tabellen, die zu den Models gehören sind immer im Plural
+			Tabelle heisst: events
+
+	Prinzip der geringsten Überraschung
+		Der User sollte Funktionen und Methoden erraten können
