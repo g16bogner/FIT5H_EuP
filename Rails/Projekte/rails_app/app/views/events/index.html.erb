@@ -1,4 +1,4 @@
-<h1>Events</h1>
+<h1><%= pluralize(@events.count, "Event", plural: "Events" ) %></h1>
 
 <table>
 	<tr>
@@ -7,6 +7,7 @@
 		<th>Ort</th>
 		<th>Preis</th>
 		<th>Beginn</th>
+		<th>Show</th>
 	</tr>
 	<% @events.each do |event| %>
 		<tr>
@@ -15,8 +16,10 @@
 			<td><%= event.location %></td>
 			<td><%= format_price(event) %></td>
 			<td><%= event.start_date %></td>
+			<td><%= link_to "Show", event_path(event.id) %></td>
 		</tr>
 	<% end %>
 
 </table>
 
+<p><%= link_to "Neuen Event", new_event_path %></p>
