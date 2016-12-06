@@ -1,0 +1,14 @@
+Erstellen Sie für die Movie-App
+  Route
+  COntroller
+  View
+zur Erstellung eines FOrmulars zum Editieren der Movie-Daten.
+
+Sorgen Sie dafür, dass der neue Datensatz in der Datenbank gespeichert wird und der CLient die geänderten Daten sehen kann.
+
+Implementieren Sie die Möglichkeit einen neuen Datensatz einzugeben.
+
+
+Vereinfachen Sie Ihren Code, legen Sie im Controller zwei Methoden zum Anlegen eines Movies und zum Befüllen der permitted_params an.
+
+Lagern Sie das FOrmular in ein Partial aus.

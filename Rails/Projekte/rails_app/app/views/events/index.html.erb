@@ -8,6 +8,7 @@
 		<th>Preis</th>
 		<th>Beginn</th>
 		<th>Show</th>
+		<th>Edit</th>
 	</tr>
 	<% @events.each do |event| %>
 		<tr>
@@ -17,6 +18,7 @@
 			<td><%= format_price(event) %></td>
 			<td><%= event.start_date %></td>
 			<td><%= link_to "Show", event_path(event.id) %></td>
+			<td><%= link_to 'Edit', edit_event_path(event.id) %></td>
 		</tr>
 	<% end %>
 
