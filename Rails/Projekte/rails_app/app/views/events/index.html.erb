@@ -9,6 +9,7 @@
 		<th>Beginn</th>
 		<th>Show</th>
 		<th>Edit</th>
+		<th>Del</th>
 	</tr>
 	<% @events.each do |event| %>
 		<tr>
@@ -19,6 +20,7 @@
 			<td><%= event.start_date %></td>
 			<td><%= link_to "Show", event_path(event.id) %></td>
 			<td><%= link_to 'Edit', edit_event_path(event.id) %></td>
+			<td><%= link_to 'Del', event_path(event.id), method: :delete, data: { confirm: 'Sicher löschen?'} %></td>
 		</tr>
 	<% end %>
 
