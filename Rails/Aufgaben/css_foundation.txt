@@ -1,0 +1,13 @@
+link: http://foundation.zurb.com/sites/docs/v/5.5.3/applications.html
+
+1) gem 'foundation-rails'		#unter Gemfile hinzufuegen
+2) bundle install				#in Konsole
+3) rails g foundation:install 	#in Konsole -> Y
+
+4)    <%= javascript_include_tag "vendor/modernizr" %>		
+	#in app/views/layouts/application.html.erb	hinzufügen
+5)    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>		
+	#muss auch vorhanden sein, ggf hinzufügen
+6) unter app/assets/stylesheets unter application.css  '*= require foundation' hinzufuegen
+7) von http://foundation.zurb.com/sites/docs/top-bar.html die topbar kopieren und unter app/views/layouts als z.B. _top_bar.html.erb speichern
+8) in die application.html.erb -> '    <%= render 'layouts/top_bar' %>' hinzufuegen

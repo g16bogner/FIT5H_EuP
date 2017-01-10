@@ -1,0 +1,15 @@
+1. Erstellen Sie eine Applikation books.
+
+2. Nutzen Sie für diese Applikation das CSS-Framework Foundation.
+
+3. Erstellen Sie eine Resource books mit den Spalten: author, title, description (text), published_on (Date)
+
+4. Stellen Sie sicher, dass beim Aufruf der Seite die index-Action der Resource Books aufgerufen wird.
+
+5. Binden Sie die topbar ein. Erstellen Sie einen Link in der Navigationsleiste, der auf die Index-Seite verweist.
+
+6.  Erstellen Sie eine untergeordnete Resource Likes, die eine Spalte quality (integer) hat. Sichern Sie ab, dass ein Like immer einem Book-Objekt zugeordnet ist.
+
+7. Stellen Sie sicher, dass der Benutzer bei der Neuanlage/Update eines Likes eine Zahl von 1 bis 5 eingeben muss. Ansonsten wird das Formular nicht gespeichert.
+
+8. Erstellen Sie einen View-Helper, der für ein Book-Objekt den Durchschnitt aller Likes für dieses Objekt errechnet und auf der Book-Show-Seite ausgibt.  

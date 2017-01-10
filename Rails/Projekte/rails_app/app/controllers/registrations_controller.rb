@@ -15,6 +15,7 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations/new
   def new
+    raise @event.to_yaml
     @registration = @event.registrations.new
   end
 
