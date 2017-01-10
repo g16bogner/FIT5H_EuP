@@ -1,4 +1,4 @@
-<%= form_for(registration) do |f| %>
+<%= form_for([@event,@registration]) do |f| %>
   <% if registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
@@ -24,11 +24,6 @@
   <div class="field">
     <%= f.label :how_heard %>
     <%= f.text_field :how_heard %>
-  </div>
-
-  <div class="field">
-    <%= f.label :event_id %>
-    <%= f.text_field :event_id %>
   </div>
 
   <div class="actions">
