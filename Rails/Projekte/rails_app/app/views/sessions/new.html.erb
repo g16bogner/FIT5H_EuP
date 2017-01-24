@@ -1,0 +1,33 @@
+<h1>Sing Song</h1>
+
+<%= form_tag(session_path) do %>
+	<fieldset>
+		<div class="row">
+			<div class="medium-4 columns">
+				<%= label_tag :email %>
+			</div>
+			<div class="medium-8 columns">
+				<%= email_field_tag :email, params[:email], autofocus: true %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="medium-4 columns">
+				<%= label_tag :password %>
+			</div>
+			<div class="medium-8 columns">
+				<%= password_field_tag :password, nil %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="medium-4 columns">
+				
+			</div>
+			<div class="medium-8 columns">
+				<%= submit_tag 'SignIn' %>
+			</div>
+		</div>
+	</fieldset>
+
+<% end %>
