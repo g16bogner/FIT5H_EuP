@@ -1,0 +1,4 @@
+Erzwingen SIe in der Movie-App, dass nur ein eingeloggter user die Users sehen darf.
+Der angemeldete User darf nur seinen eigenen Account ändern oder löschen.
+
+Nach der Anmeldung sollte der User zu seiner angesteuerten Seite geleitet werden.

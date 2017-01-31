@@ -8,6 +8,12 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+	def require_signin
+		unless current_user
+			redirect_to new_session_url, alert: "Please sign in first!!!"
+		end
+	end
+		
   def set_locale
   	I18n.locale = I18n.default_locale
   end
