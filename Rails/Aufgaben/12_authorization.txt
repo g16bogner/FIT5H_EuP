@@ -2,3 +2,8 @@ Erzwingen SIe in der Movie-App, dass nur ein eingeloggter user die Users sehen d
 Der angemeldete User darf nur seinen eigenen Account ändern oder löschen.
 
 Nach der Anmeldung sollte der User zu seiner angesteuerten Seite geleitet werden.
+
+Fügen Sie zur Tabelle Users eine Spalte admin vom Datentyp Boolean hinzu.
+Stellen Sie sicher, dass nur ein Admin-User neue Filme anlegen und editieren kann.
+
+Korrigieren Sie die Links, sodass ein User nur das Anklicken kann was er/sie darf.
