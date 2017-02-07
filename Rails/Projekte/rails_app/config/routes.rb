@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resource :session
   resources :users
   resources :events do
-		resources :registrations
+  	resources :likes
+	resources :registrations
   end
 end

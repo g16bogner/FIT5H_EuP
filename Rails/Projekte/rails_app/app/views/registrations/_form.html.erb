@@ -12,18 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-
-  <div class="field">
     <%= f.label :how_heard %>
-    <%= f.text_field :how_heard %>
+    <%= f.select :how_heard, Registration::HOW_HEARD_OPTIONS, prompt: 'Nimm einen' %>
   </div>
 
   <div class="actions">

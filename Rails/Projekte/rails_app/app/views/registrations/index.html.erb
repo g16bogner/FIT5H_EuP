@@ -13,8 +13,8 @@
   <tbody>
     <% @registrations.each do |registration| %>
       <tr>
-        <td><%= registration.name %></td>
-        <td><%= registration.email %></td>
+        <td><%= registration.user.name %></td>
+        <td><%= registration.user.email %></td>
         <td><%= registration.how_heard %></td>
         <td><%= link_to 'Show', event_registration_path(@event.id,registration.id) %></td>
         <td><%= link_to 'Edit', edit_event_registration_path(@event.id, registration.id) %></td>
