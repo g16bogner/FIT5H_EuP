@@ -1,0 +1,34 @@
+Erstellen eines Projektes LIBRARY
+Arbeitsschritt
+
+Erstellen Sie einProjekt mit der Bezeichnung library. Binden Sie Foundation als CSS-Library ein.
+
+Erstellen Sie die Resourceauthor und den Spalten firstname, lastname
+
+Erstellen der Resource book mit den Spalten: author_id und title, year, description der in einem 1:n Verhältnis zu author steht
+Die Resource author ist auch beim Routing der Resource book untergeordnet.
+Die Root-Url des Projektes zeigt die books-index-Seite.
+
+Legen Sie eine Seeds-Datei an, in der drei Autoren und fünf Bücher eingegeben sind.
+
+Erstellen Sie mit einem Scaffold eine user Resource mit den Feldern: login, email, admin (boolean), birthdate (date), active (boolean). Da das User-Objekt für einen Login verwendet werden soll und das bcrypt-ruby – gem eingebunden werden soll, ist noch ein entsprechendes Passwort-Feld nötig.
+Erstellen Sie Login und Authentifizierung nach dem Muster der Event-App.
+
+Eine Resource lending regelt den Verleih von Büchern an User. Lending hat eine Referenz auf book, eine auf user, ein lending_date(date), return_date(date).
+Es muss ein User angemeldet sein, damit er ein Buch ausleihen kann, und das Buch darf nicht ausgeliehen sein. Wenn ein User ein Buch ausleiht, dann wird in der Resource lending ein Datensatz angelegt, das lending_date wird auf das aktuelle Datum gesetzt. Wird das Buch zurückgegeben, dann wird das return_date auf den aktuellen Datumswert gesetzt.
+
+Eine m:n Beziehung zwischen Buch und User ermöglicht eine einfache Abfrage welche User ein Buch schon einmal ausgeliehen hatten, und welche Bücher ein User schon ausgeliehen hatte.
+
+Vorgefertigte Datenbankabfragen (Scope) ermöglichen eine einfache Anzeige von allen freien Büchern und von allen ausgeliehenen Büchern.
+
+Funtionalität:
+Stellen Sie sicher, daß folgende Funktionen möglich sind:
+Ein anonymer Benutzer sieht lediglich eine Liste der Bücher in der Bibliothek.
+Ein angemeldeter Benutzer kann seine Daten editieren, kann ein Buch ausleihen, ein Buch zurückgeben und jeweils eine Liste der bereits ausgeliehenen, aber wieder zurückgegebenen Bücher und eine zweite Liste der momentan ausgeliehenen Bücher sehen.
+Ein Admin sieht eine Liste der User, kann einen User als inaktiv setzen. Er sieht eine Liste aller Bücher mit dem jeweiligen Status (frei oder ausgeleihen). Er kann neue Bücher einstellen.
+
+
+
+
+
+
