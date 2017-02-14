@@ -1,5 +1,9 @@
+
 Erstellen eines Projektes LIBRARY
-Arbeitsschritt
+Vorbemerkung: Nehmen Sie als Hilfsmittel die Onlinehilfe von Zeal und die Hilfedatei, die während des Unterrichts erstellt wurde.
+Bevor Sie starten verschaffen Sie sich auf dem Papier eine Übersicht mit den notwnedigen Schritten.
+
+Arbeitsschritte
 
 Erstellen Sie einProjekt mit der Bezeichnung library. Binden Sie Foundation als CSS-Library ein.
 
