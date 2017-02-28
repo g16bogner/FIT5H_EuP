@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Lending date</th>
+      <th>Return date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% lendings.each do |lending| %>
+      <tr>
+        <td><%= lending.book.title %></td>
+        <td><%= lending.lending_date %></td>
+        <td><%= lending.return_date %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

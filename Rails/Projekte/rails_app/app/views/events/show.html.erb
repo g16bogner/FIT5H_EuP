@@ -11,6 +11,14 @@
 <h3>Price</h3>
 <p><%= format_price @event %></p>
 
+<h3>Categories</h3>
+<ul>
+	<% @categories.each do |category| %>
+		<li><%= category.name %></li>
+	<% end %>
+</ul>
+
+
 <p>
 	<% if like = Like.where(user_id: current_user.id, event_id: @event.id).first %>
 		<%= link_to 'DISLIKE', event_like_path(@event.id, like.id), method: :delete, class: 'button alert' %>

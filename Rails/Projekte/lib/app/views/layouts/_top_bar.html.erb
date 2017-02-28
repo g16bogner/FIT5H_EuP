@@ -1,0 +1,23 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Library</li>
+      <% if current_user %>
+        <li><%= link_to "Home", authors_path %></li>
+        <li><%= link_to 'My lendings', user_lendings_path(current_user.id) %></li>
+
+      <% end %>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <% if current_user %>
+        <%= current_user.login %>
+        <%= link_to 'Logout', session_path, method: :delete %>
+      <% else %>
+        <li><%= link_to 'Sign UP', signup_path %></li>
+        <li><%= link_to 'Sign IN', new_session_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

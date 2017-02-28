@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lending date:</strong>
+  <%= @lending.lending_date %>
+</p>
+
+<p>
+  <strong>Return date:</strong>
+  <%= @lending.return_date %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @lending.book %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @lending.user %>
+</p>
+
+<%= link_to 'Edit', edit_lending_path(@lending) %> |
+<%= link_to 'Back', lendings_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lending_date: 2017-02-21
+  return_date: 2017-02-21
+  book: one
+  user: one
+
+two:
+  lending_date: 2017-02-21
+  return_date: 2017-02-21
+  book: two
+  user: two

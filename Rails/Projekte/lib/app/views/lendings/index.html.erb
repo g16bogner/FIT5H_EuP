@@ -1,0 +1,14 @@
+<h1>Lendings von <%= @user.login %></h1>
+
+<ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Aktuelle ausgeliehene Bücher</a></li>
+  <li class="tabs-title"><a href="#panel2">Zurückgegebene Bücher</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="example-tabs">
+  <div class="tabs-panel is-active" id="panel1">
+    <%= render 'listing', lendings: @lendings_open  %>
+  </div>
+  <div class="tabs-panel" id="panel2">
+  <%= render 'listing', lendings: @lendings_returned  %>
+  </div>
+</div>

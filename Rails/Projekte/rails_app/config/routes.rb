@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :categories
   root 'events#index'
   
   get 'signup' => 'users#new'
